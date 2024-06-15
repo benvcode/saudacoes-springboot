@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 // A anotação '@RestController' indica que esta classe é um 'Controlador Rest' (que contém métodos responsáveis
 // por lidar com 'requisições' e 'respostas' HTTP).
 // '@RequiredArgsConstructor' do Lombok: Permite realizar 'injecção de dependência por constructor'
-// seguindo o princípio de 'IoC'.
+// seguindo o princípio de 'IoC', gerando automaticamente um construtor que inicializa todos os campos finais,
+// contendo as instâncias necessárias.
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("saudacao") // Define 'saudacao' como 'URL base' para todos os métodos dentro deste controlador.
